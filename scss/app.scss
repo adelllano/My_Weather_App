@@ -1,5 +1,131 @@
 @import "settings";
 @import "foundation";
+.has-form {
+  position: absolute;
+  top: 0;
+  left: 10.15rem; // adjust distance from left here
+  min-width: 12rem; // adjust width here
+  
+  @media only screen and (max-width: 40em) {
+    min-width: .5rem;
+    top: 0.5rem;
+    .button {
+        padding-left: .5em;
+        height: 1.85rem;
+        background-color: cornflowerblue;
+        
+        &:hover {
+        background-color: gold;
+    }
+  }
+}
+}
+
+.titlebar{
+p {
+    font-size: 25px;
+    font-family: helvetica; 
+    text-align: center;
+    background-color: cornflowerblue;
+    opacity: 1;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: white;
+}
+}
+
+$global-radius: 4px;
+
+
+.image-wrapper {
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgba(0,0,0,0.04);
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  border-radius: $global-radius;
+}
+
+.image-overlay-content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
+// modifier classes
+
+.overlay-fade-in {
+  
+//  p {
+//    letter-spacing: 0.15em;
+//    color: #f4f4f4;
+//    font-size: 28px;
+//    opacity: 0;
+//    transition: all 0.2s linear;
+//  }
+  
+  img {
+    transition: all 0.2s linear;
+  }
+  
+  .image-overlay-content {
+    opacity: 0;
+    background-color: rgba(0,0,0, 0.4);
+    transition: all 0.4s ease-in-out;
+  }
+ 
+  h2 {
+    color: #f2f2f2;
+    font-size: 1.8rem;
+    margin-top: 30%; //yellow bar
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+    background: rgba(gold, 0.7);
+  }
+  
+  .button {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px; 
+    background: #FFF;
+    color: #222;
+    text-transform: uppercase;
+    box-shadow: 0 0 1px #000;
+    position: relative;
+    border: 1px solid #000;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+    
+    &:hover {
+      box-shadow: 0 0 5px #000;
+    }
+  }
+  
+  &:hover img {
+    transform: scale(1.2);
+  }
+  
+  &:hover .image-overlay-content {
+    opacity: 1;
+  }
+  
+  &:hover h2, p, .button {
+    opacity: 5;
+  }
+  
+  &:hover p {
+    transition-delay: 0.1s;
+  }
+  
+  &:hover .button {
+    transition-delay: 0.2s;
+  }
+} 
+
 
 // Or selectively include components
 // @import
