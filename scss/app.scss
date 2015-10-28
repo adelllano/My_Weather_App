@@ -1,25 +1,42 @@
 @import "settings";
 @import "foundation";
-.has-form {
-  position: absolute;
-  top: 0;
-  left: 10.15rem; // adjust distance from left here
-  min-width: 12rem; // adjust width here
-  
-  @media only screen and (max-width: 40em) {
-    min-width: .5rem;
-    top: 0.5rem;
-    .button {
-        padding-left: .5em;
-        height: 1.85rem;
-        background-color: cornflowerblue;
-        
-        &:hover {
-        background-color: gold;
-    }
-  }
+//.has-form {
+//  position: absolute;
+//  top: 0;
+//  left: 10.15rem; // adjust distance from left here
+//  min-width: 12rem; // adjust width here
+//  
+//  @media only screen and (max-width: 40em) {
+//    min-width: .5rem;
+//    top: 0.5rem;
+//    .button {
+//        padding-left: .5em;
+//        height: 1.85rem;
+//        background-color: cornflowerblue;
+//        
+//        &:hover {
+//        background-color: gold;
+//    }
+//  }
+//}
+//}
+
+.title-area {
+    width: 100%;
 }
+
+.top-bar  {
+    background-color: gold;
+    text-align: center;
+    
 }
+
+h1  {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+//img {
+//   width: 100%;
+// }
 
 .titlebar{
 p {
@@ -33,85 +50,3 @@ p {
     color: white;
 }
 }
-
-$global-radius: 4px;
-
-
-.image-wrapper {
-  width: 100%;
-  height: 100%;
-  border: 1px solid rgba(0,0,0,0.04);
-  overflow: hidden;
-  position: relative;
-  text-align: center;
-  border-radius: $global-radius;
-}
-
-.image-overlay-content {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  overflow: hidden;
-  top: 0;
-  left: 0;
-}
-
-// modifier classes
-
-.overlay-fade-in {
-  
-  
-//image fade in/out
-    
-  img {
-    transition: all 0.2s linear;
-  }
-  
-  .image-overlay-content {
-    opacity: 0;
-    background-color: rgba(0,0,0, 0.4);
-    transition: all 0.4s ease-in-out;
-  }
- 
-//text bars in front of image buttons
-  h2 {
-    color: #f2f2f2;
-    font-size: 1.8rem;
-    margin-top: 30%; //yellow bar
-    opacity: 0;
-    transition: all 0.2s ease-in-out;
-    background: rgba(gold, 0.7);
-  }
-  
-  .button {
-    display: inline-block;
-    text-decoration: none;
-    padding: 7px 14px; 
-    background: #FFF;
-    color: #222;
-    text-transform: uppercase;
-    box-shadow: 0 0 1px #000;
-    position: relative;
-    border: 1px solid #000;
-    opacity: 0;
-    transition: all 0.2s ease-in-out;
-    
-    &:hover {
-      box-shadow: 0 0 5px #000;
-    }
-  }
-  
-  &:hover img {
-    transform: scale(1.2);
-  }
-  
-  &:hover .image-overlay-content {
-    opacity: 1;
-  }
-  
-  &:hover h2, p, .button {
-    opacity: 5;
-  }
-  
-
-} 
