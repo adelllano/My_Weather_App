@@ -7,33 +7,105 @@
 }
 
 .top-bar  {
-    background-color: gold;
+    background-color: #F7EB0B;
+    height: 50px;
     
 }
+
+#weather_image {
+    padding-left: 20px;
+}
+
+#greeting {
+    text-align: center;
+}
+
+#temp {
+    text-align: center;
+
+}
+
+.logo    {
+    align: center;
+}
+
+.search-area {
+margin-top: 11px;
+
+}
+//.has-form {
+//  position: absolute;
+//  top: 0;
+//  left: 0rem; // adjust distance from left here
+//  min-width: 14rem; // adjust width here
+//  align-items: center;
+//    
+//  @media only screen and (max-width: 40em) {
+//    min-width: 10rem;
+//    top: 0.5rem;
+//    
+//    .button {
+//      height: 1.85rem;
+//    }
+//  }
+//}
+
+//.large-4 small-2 columns {
+//    text-align: left;
+//}
+
+
 .top-bar .name h1 a {
+color: #F7931E;
 width: 100%;
 }
+
 .top-bar .name h1 {
  font-size: 1.50rem;   
- font-family: "Arial", "Helvetica", sans-serif;
+ font-family: "Myriad Pro", "Helvetica", sans-serif;
  text-align: center;
+ padding-top: 5px;
  width: 100%;
 }
 
+#img_description {
+ text-align: center; 
+ margin-top: 10px;
+}
 
+.input {
+    background-color: aqua;
+}
+
+.responsive-button {
+    padding: 9px;
+    align-content: center;
+}
+//.search-area h3   {
+//    City Area
+//}
+
+//.row h3 {
+//    text-align: right;
+//}
+.row    {
+ align-content: center;   
+}
 //h1  {
 //    font-family: "Trebuchet MS", Helvetica, sans-serif;
 //    color: coral;
 //}
 
 h2  {
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
+//    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-family: 'Slabo 27px', serif;
     color: #5077BD;
 }
 
 h3  {
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-family: 'Slabo 27px', serif;
     color: cornflowerblue;
+//    text-align: right;
 }
 
 .img-description h2{
